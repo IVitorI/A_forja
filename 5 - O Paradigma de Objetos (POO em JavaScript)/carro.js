@@ -1,19 +1,21 @@
 class Carro {
 
+    #ligado;
+
     constructor(marca, modelo) {
         this.marca = marca;
         this.modelo = modelo;
-        this.ligado = false;
+        this.#ligado = false;        
     }
 
     ligar() {
-        this.ligado = true;
+        this.#ligado = true;
         console.log('Carro ' + this.marca + ' ' + this.modelo + ' ligado')
     }
 
 
     desligar() {
-        this.ligado = false;
+        this.#ligado = false;
         console.log('Carro ' + this.marca + ' ' + this.modelo + ' desligado')
     }
     
